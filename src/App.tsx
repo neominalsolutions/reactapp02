@@ -4,6 +4,7 @@ import './App.css';
 import FunctionComponentSample from './components/FunctionComponentSample';
 import FunctionComponentRefSample from './components/FunctionComponentRefSample';
 import FunctionComponentFormSample from './components/FunctionComponentFormSample';
+import UsersPage from './pages/users/UsersPage';
 
 function App() {
 	return (
@@ -11,7 +12,8 @@ function App() {
 			{/* <FunctionComponentSample /> */}
 			{/* <FunctionComponentRefSample /> */}
 
-			<FunctionComponentFormSample text="ali" />
+			{/* <FunctionComponentFormSample text="ali" /> */}
+			<UsersPage />
 		</div>
 	);
 }

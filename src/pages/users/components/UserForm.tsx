@@ -1,4 +1,6 @@
 type UserFormProps = {
+	name?: string;
+	surname?: string;
 	submit: (formData: any) => void;
 };
 
@@ -35,6 +37,7 @@ export default function UserForm(props: UserFormProps) {
 			}
 		}
 
+		// event fırlatma işlemi
 		props.submit(_formData);
 	};
 

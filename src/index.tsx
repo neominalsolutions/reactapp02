@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import UsersPage from './pages/users/UsersPage';
 import Layout from './layouts/Layout';
+import TodoPage from './pages/todos/TodoPage';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
@@ -18,6 +19,7 @@ root.render(
 					<Route path="" element={<h1>Anasayfa</h1>}></Route>
 					<Route path="users" Component={UsersPage}></Route>
 					<Route path="about" element={<h1>Hakkımızda Sayfası</h1>}></Route>
+					<Route path="todos" Component={TodoPage}></Route>
 				</Route>
 			</Routes>
 		</BrowserRouter>
